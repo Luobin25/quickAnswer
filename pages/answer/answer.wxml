@@ -1,0 +1,31 @@
+<!--pages/answer/answer.wxml-->
+<view>
+  <!-- 题目 -->
+  <view class="title">
+    <view class="select-title">
+      <i-tag type="border" color="blue" wx:if="{{obj.type==0}}">单选</i-tag>
+      <i-tag type="border" color="blue" wx:if="{{obj.type==1}}">多选</i-tag>
+      <text>{{currIdx+1}}.{{obj.name}}</text>
+    </view>
+  </view>
+
+  <view class="answer">
+    <i-panel>
+      <view class="select" wx:if="{{obj.type==0}}">
+        <radio-group class="radio-group" bindchange="change">
+          <label class="radio" wx:for="{{answers}}" wx:for-item="item" wx:key="key">
+            <radio value="{{item}}" checked="{{item.checked}}">{{item}}</radio>
+          </label>
+        </radio-group>
+      </view>
+      <view class="multiple" wx:if="{{obj.type==1}}">
+        <checkbox-group bindchange="change">
+          <label class="checkbox" wx:for="{{answers}}" wx:for-item="item" wx:key="key">
+            <checkbox value="{{item}}" checked="{{item.checked}}" />{{item}}
+          </label>
+        </checkbox-group>
+      </view>
+      <button class="submit" bindtap='submit' class="i-btn i-btn-small i-btn-primary i-btn-circle">提交</button>
+    </i-panel>
+  </view>
+</view>

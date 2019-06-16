@@ -1,0 +1,13 @@
+<!--pages/main/main.wxml-->
+<view>
+  <view class='answer'>
+    <image src='/images/select.png'></image>
+  </view>
+  <view class='tips'>
+    <text>
+    随机测试10小题，包含7道单项选择题和3道多项选择题，每小题10分。单项选择题只有1个正确答案，多项选择题有多个正确答案，请从每题的备选答案中选出你认为正确的答案。答题不可修改。
+  </text>
+  </view>
+<view class='start'><navigator url='/pages/answer/answer'>
+  开始答题</navigator></view>
+</view>

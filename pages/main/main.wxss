@@ -1,0 +1,35 @@
+/* pages/main/main.wxss */
+.answer{
+  text-align: center;
+  margin: 0 auto;
+  width: 350rpx;
+  height: 350rpx;
+  padding-top: 100rpx;
+}
+
+.answer image{
+  width:275rpx;
+  height:275rpx;
+}
+
+.tips {
+  line-height: 25px;
+  font-size: 15px;
+  color: #aaa;
+  padding:0 40rpx;
+  margin-bottom:30px;
+}
+
+.start{
+  font-size: 30rpx;
+  background-color: #2db7f5;
+  width: 250rpx;
+  height: 80rpx;
+  border-radius: 100rpx;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+}

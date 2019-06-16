@@ -1,0 +1,67 @@
+/* pages/answer/answer.wxss */
+
+.page {
+  min-height: 100%;
+  flex: 1;
+  background-color: #fbf9fe;
+  font-size: 32rpx;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.title {
+  padding-bottom: 50pxpx;
+}
+
+.title text {
+  margin-left: 20px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.answer {
+  margin: 80rpx, 0;
+}
+
+.select {
+  padding: 0 10rpx;
+}
+
+.multiple {
+  padding: 0 10rpx;
+}
+
+
+.radio, .checkbox {
+  display: block;
+  margin-bottom: 20rpx;
+  margin-top: 20px;
+}
+
+.i-btn {
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  user-select: none;
+  font-size: 14px;
+  border: 0 !important;
+  position: relative;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+
+.i-btn-primary {
+  color: #fff !important;
+  background: #2db7f5 !important;
+}
+
+.i-btn-small.i-btn-circle {
+  border-radius: 40px;
+  height: 40px;
+  line-height: 40px;
+}

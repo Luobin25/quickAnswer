@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl ? userInfo.avatarUrl : '../../images/index_bg.png'}}" background-size="cover" bindtap="onNav" data-url="/pages/user-info/user-info"></image>
+    <view>
+      <text class="userinfo-nickname">{{userInfo.avatarUrl ? userInfo.nickName : '匿名'}}</text>
+    </view>
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      获取授权
+    </button>
+  </view>
+</view>

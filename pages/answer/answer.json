@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "答题",
+  "usingComponents": {
+    "i-panel": "../../dist/panel/index",
+    "i-tag": "../../dist/tag/index",
+    "i-radio-group": "../../dist/radio-group/index",
+    "i-radio": "../../dist/radio/index"
+  }
+}
